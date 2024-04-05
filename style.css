@@ -25,9 +25,10 @@ img{
 }
 
 input{
-    line-height:35px;
+    line-height:2;
     width:80%;
-
+    padding: 0.375rem, 0.75rem;
+    
 }
 .title{
     font-size: 8vw;
@@ -78,13 +79,6 @@ input{
     align-items: center;
 }
 
-#user-input{
-    align-self: center;
-    line-height:2;
-    padding: 0.375rem, 0.75rem;
-    width:100%;
-}
-
 .form-control{
     line-height:50px;
     font-size:2vw;
@@ -112,7 +106,6 @@ input{
 }
 
 div .col-md-6{
-    margin:0px;
     padding:0px;
 }
 

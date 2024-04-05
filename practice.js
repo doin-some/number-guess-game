@@ -10,9 +10,8 @@ let resultImg = document.getElementById('main-img')
 
 playButton.addEventListener("click", play);
 resetButton.addEventListener("click", reset);
-userInput.addEventListener("focus", function (){
-    userInput.value = ""
-})
+userInput.addEventListener("focus", focusInput);
+
 
 function selectNum(){
     computerNum = Math.floor(Math.random() * 100 + 1);
@@ -73,5 +72,10 @@ function reset(){
     numList = []
     chance = 5;
     playButton.disabled = false
-    
 }
+
+function focusInput(){
+    userInput.value=""
+}
+
+selectNum()
